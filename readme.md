@@ -14,5 +14,6 @@ Ce site est un site qui me permettra de réussir les compétences suivantes :
 J'ai crée le dossier /pages avec la page 404 pour la personnalisé ainsi que la page home.
 5. Sur le site officiel de Bootstrap copier le lien CDN afin de l'utiliser dans son projet. Le premier lien que l'on placera dans le header fonctionne pour le CSS et le deuxième lien qui sera quand a lui placé juste avant la balise fermante du body est pour le JavaScript.
 Si vous souhaitez intégrer des icons Bootstrap, il faut également télécharger ou ici en l'occurence copier le lien CDN adéquat.
+6. Création de ma navbar avec l'aide du site officiel de Bootstrap + insertion des mes icones en png 
 
 # Déploiement
