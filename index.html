@@ -25,16 +25,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item d-flex align-items-center justify-content-center">
-              <a class="nav-link text-success" href="/"><img src="./img/accueil.png" class="logo"></a>
+              <a class="nav-link text-success" href="/"><img src="./img/accueil.png" class="logo"
+                  title="Retourne vers l'accueil"></a>
             </li>
             <li class="nav-item d-flex align-items-center justify-content-center">
-              <a class="nav-link text-warning" href="/js"><img src="./img/js.png" class="logo"></a>
+              <a class="nav-link text-warning" href="/js"><img src="./img/js.png" class="logo"
+                  title="Fonce vers mon JS"></a>
             </li>
             <li class="nav-item d-flex align-items-center justify-content-center">
-              <a class="nav-link text-danger" href="/php"><img src="./img/php.png" class="logo"></a>
+              <a class="nav-link text-danger" href="/php"><img src="./img/php.png" class="logo"
+                  title="Découvre la page PHP"></a>
             </li>
             <li class="nav-item d-flex align-items-center justify-content-center">
-              <a class="nav-link text-info" href="/python"><img src="./img/python.png" class="logo"></a>
+              <a class="nav-link text-info" href="/python"><img src="./img/python.png" class="logo"
+                  title="Python? En cours d'apprentissage"></a>
             </li>
           </ul>
         </div>
@@ -47,13 +51,23 @@
 
   </main>
 
-  <footer>Le footer</footer>
+  <footer class="bg-dark text-white text-center footer">
+    <div class="labyrinthe">
+      <img src="./img/html.png" alt="html" class="img-footer">
+      <img src="./img/css.png" alt="css" class="img-footer">
+      <img src="./img/bootstrap.png" alt="bootstrap" class="img-footer">
+      <img src="./img/js.png" alt="js" class="img-footer">
+      <img src="./img/php.png" alt="php" class="img-footer">
+      <img src="./img/python.png" alt="python" class="img-footer">
+    </div>
+  </footer>
 
   <!-- Obliger de mettre de type module en JS quand on travaille avec des imports  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script type="module" src="Router/Router.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

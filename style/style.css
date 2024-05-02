@@ -10,6 +10,77 @@
   text-align: center;
 }
 
+.organisation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#caroussel {
+  width: 140px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.images {
+  display: flex;
+  justify-content: start;
+  animation-duration: 20s;
+  animation-name: caroussel;
+  animation-iteration-count: infinite;
+}
+
+@keyframes caroussel {
+  0% {
+    transform: translateX(0);
+  }
+  33.3% {
+    transform: translateX(-140px);
+  }
+  66.6% {
+    transform: translateX(-280px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.defil-img{
+  width: 140px;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+footer {
+height: 15vh;
+}
+
+.img-footer{
+  width: 50px;
+}
+
+.img-footer.animate {
+  animation: defilement 2s linear infinite;
+  display: block;
+}
+
+@keyframes defilement {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(5vh) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg); 
+  }
+}
 
 @media screen and (max-width: 992px) {
   .nav-link {
