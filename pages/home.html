@@ -1,15 +1,35 @@
-<h1 class="text-center fs-1">Bienvenue sur mon site web</h1>
-<section class="organisation">
-  <div id="caroussel">
-    <div class="images">
-      <img src="../img/js.png" alt="JavaScript" class="defil-img"></img>
-      <img src="../img/php.png" alt="PHP" class="defil-img"></img>
-      <img src="../img/python.png" alt="Python" class="defil-img"></img>
+<div class="principal">
+  <h1 class="text-center fs-1 text-white">Bienvenue sur mon site web</h1>
+  <section class="organisation">
+    <div id="caroussel">
+      <div class="images">
+        <img src="../img/js.png" alt="JavaScript" class="defil-img"></img>
+        <img src="../img/php.png" alt="PHP" class="defil-img"></img>
+        <img src="../img/python.png" alt="Python" class="defil-img"></img>
+      </div>
+    </div>
+  </section>
+  <div class="org_button">
+    <button class="manage_button" onclick="openModal()">Découvre le monde informatique</button>
+    <div class="overlay"></div>
+    <div class="modal">
+      <button type="submit" class="modal_close" onclick="closeModal()"><i class="bi bi-x-circle"></i></button>
+      <div class="modal_header">
+        <h2 class="modal_header_title">Le monde binaire</h2>
+      </div>
+
+      <div class="modal_body">
+        <p>
+          01001010 01100101 00100000 01110110 01100001 01101001 01110011 00100000 01110010 11101001 01110101 01110011
+          01110011 01101001 01110010 00100000 01101101 01101111 01101110 00100000 01110100 01101001 01110100 01110010
+          01100101 00100000 01010010 01001110 01000011 01010000
+        </p>
+        <p>Que veux dire : Je vais réussir mon titre RNCP</p>
+      </div>
+
+      <div class="modal_footer">
+        <button class="modal_button" onclick="closeModal()">Fermer</button>
+      </div>
     </div>
   </div>
-</section>
-
-
-<button class="btn btn-primary">Cliquez ici</button>
-
-<i class="bi bi-airplane"></i>
+</div>

@@ -1,5 +1,37 @@
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  box-shadow: 5px black;
+}
+
+.principal{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .nav-link {
   width: 100px;
+  height: 100%;
+  align-content: center;
+}
+
+.container-fluid{
+  padding: 10px;
+}
+
+.nav-item:hover {
+  transform: scale(1.5);
 }
 
 .logo{
@@ -14,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
 }
 
 #caroussel {
@@ -51,14 +83,11 @@
 }
 
 footer{
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   overflow: hidden;
-}
-
-footer {
-height: 15vh;
+  height: 110px;
 }
 
 .img-footer{
@@ -68,6 +97,100 @@ height: 15vh;
 .img-footer.animate {
   animation: defilement 2s linear infinite;
   display: block;
+}
+
+/* Modale */
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 3px;
+  display: none;
+}
+
+.modal_close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.modal_close:hover{
+  transform: scale(1.5);
+}
+
+.modal_header h2 {
+  margin: 15px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modal_body{
+  margin: 25px;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.modal_footer {
+  position: absolute;
+  right: 10px;
+}
+
+.modal_footer button {
+  background-color: #3f51b5;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  font-style: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal_footer button:hover {
+  background-color: #303f9f;
+}
+
+.modal-open{
+  display: block;
+}
+
+
+
+.org_button {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.manage_button{
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.manage_button:hover{
+background-color: #ffffff8a;
 }
 
 @keyframes defilement {
@@ -88,9 +211,7 @@ height: 15vh;
     height: 55px;
     align-content: center;
   }
-  .nav-link:hover {
-  background-color: white;
-  }
+
   .logo{
     width: 50px
   }
